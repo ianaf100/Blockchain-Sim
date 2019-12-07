@@ -7,9 +7,7 @@
 }
 
 mat-form-field {
-    /* display: flex;
-    flex-direction: column; */
-    width: 300px;
+    width: 400px;
     margin-left: 5pt;
     margin-right: 25pt;
 }

@@ -17,7 +17,7 @@ export class OptionsComponent implements OnInit {
   selectedEngine: string = "embedded"
   engines = [
     {value: 'embedded', viewValue: "Use Embedded Mining Engine"},
-    {value: 'external', viewValue: "Use External Mining Engine"}
+    {value: 'external', viewValue: "Use External Mining Engine (Python WebService)"}
   ]
 
   constructor(private sharedService: SharedService) { }
