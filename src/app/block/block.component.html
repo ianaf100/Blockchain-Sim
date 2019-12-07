@@ -1,0 +1,32 @@
+<mat-card 
+    [ngClass]="{
+        'good-status' : isValid,
+        'bad-status' : isValid == false
+    }">
+    <mat-card-title>Block {{count}}</mat-card-title>
+    <mat-card-subtitle>Status: {{isValid ? "good" : "bad" }}</mat-card-subtitle>
+    <mat-card-content>
+        <div class="fields">
+            <mat-form-field >
+                <input matInput placeholder="ID" [(ngModel)]="id" readonly>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Parent" [(ngModel)]="parentHash" readonly>
+            </mat-form-field>
+            <mat-form-field>
+                <textarea matInput placeholder="Data" [(ngModel)]="data" (ngModelChange)="onUpdate()" rows=5 spellcheck="false"></textarea>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Nonce" [(ngModel)]="nonce" (ngModelChange)="onUpdate()">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Hash" [(ngModel)]="hash" readonly>
+            </mat-form-field>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button (click)="onMine()">Mine</button>
+        <p id="timer">({{time}} ms) </p>
+        <!-- <div id="spinner" *ngIf="displayLoading | async"><img src="assets/loading2.gif"width="30" height="30"></div> -->
+    </mat-card-actions>
+</mat-card>

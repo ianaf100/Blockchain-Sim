@@ -1,0 +1,25 @@
+<div id="options-container">
+    <mat-form-field>
+        <mat-label>Engine</mat-label>
+        <mat-select [(ngModel)]="selectedEngine" (ngModelChange)="updateEngine()">
+            <mat-option *ngFor="let e of engines" [value]="e.value">
+                {{e.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    
+    <label>Nonce Generator:</label> 
+    <mat-radio-group aria-label="Nonce Generator" [(ngModel)]="nonceGenerator" (ngModelChange)="updateNonce()">
+        <mat-radio-button value="linear">Linear</mat-radio-button>
+        <mat-radio-button value="random">Random</mat-radio-button>
+    </mat-radio-group>
+    <br>
+
+    <mat-form-field >
+        <input matInput placeholder="Difficulty" [(ngModel)]="difficulty" (ngModelChange)="updateDifficulty()">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Attempts" [(ngModel)]="attempts" (ngModelChange)="updateAttempts()">
+    </mat-form-field>
+</div>

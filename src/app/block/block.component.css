@@ -1,0 +1,42 @@
+.fields {
+    display: flex;
+    flex-direction: column;
+}
+  
+.fields > * {
+    width: 100%;
+}
+
+mat-card {
+    width: 400px;
+    margin: 10pt;
+    display: inline-block;
+    /* border: 1px solid #000 */
+}
+
+.good-status {
+    background-color: rgba(203, 255, 179, 0.5);
+}
+
+.bad-status {
+    background-color: rgba(255, 199, 199, 0.4);
+}
+
+textarea {
+    resize: none;
+}
+
+#timer {
+    font-size: 10pt;
+    display: inline-block;
+    margin-left: 10pt;
+    color: rgb(70, 70, 70);
+
+}
+
+/* #spinner {
+    display: inline-block;
+    margin-left: 20pt;
+    position: relative;
+    top: 8px
+} */

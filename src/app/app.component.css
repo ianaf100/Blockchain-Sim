@@ -1,0 +1,14 @@
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+}
+
+#title {
+    padding: 10pt;
+}
+
+.fill {
+    flex: 1 1 auto;
+}

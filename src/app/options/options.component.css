@@ -1,0 +1,24 @@
+#options-container {
+    padding-left: 17pt;
+    padding-right: 17pt;
+    padding-bottom: 5pt;
+    padding-top: 15pt;
+    background-color: rgb(233, 233, 233);
+}
+
+mat-form-field {
+    /* display: flex;
+    flex-direction: column; */
+    width: 300px;
+    margin-left: 5pt;
+    margin-right: 25pt;
+}
+
+mat-radio-button {
+    margin-right: 10pt;
+}
+
+label {
+    margin-left: 5pt;
+    margin-right: 10pt;
+}

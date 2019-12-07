@@ -1,0 +1,10 @@
+<div id="buttons">
+    <button mat-raised-button (click)="onCreate()">Create Block</button>
+    <button mat-raised-button (click)="onReset()">Reset</button>
+</div>
+
+<app-block *ngFor="let b of chain; let idx = index" 
+    [count]="(idx + 1)"
+    [parentId]="b.parentId"
+    [parentHash]="b.parentHash">
+</app-block>
