@@ -8,12 +8,12 @@
         </mat-select>
     </mat-form-field>
     
-    <label>Nonce Generator:</label> 
+    <label class="mat-typography">Nonce Generator:</label> 
     <mat-radio-group aria-label="Nonce Generator" [(ngModel)]="nonceGenerator" (ngModelChange)="updateNonce()">
         <mat-radio-button value="linear">Linear</mat-radio-button>
         <mat-radio-button value="random">Random</mat-radio-button>
     </mat-radio-group>
-    <br>
+    <br> 
 
     <mat-form-field >
         <input matInput placeholder="Difficulty" [(ngModel)]="difficulty" (ngModelChange)="updateDifficulty()">
