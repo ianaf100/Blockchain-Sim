@@ -16,8 +16,8 @@ export class OptionsComponent implements OnInit {
   nonceGenerator: string = "linear"
   selectedEngine: string = "embedded"
   engines = [
-    {value: 'embedded', viewValue: "Use Embedded Mining Engine"},
-    {value: 'external', viewValue: "Use External Mining Engine (Python WebService)"}
+    {value: 'embedded', viewValue: "Use Embedded Mining Engine", disabled: "false"},
+    {value: 'external', viewValue: "Use External Mining Engine (Python WebService)", disabled: "true"}
   ]
 
   constructor(private sharedService: SharedService) { }

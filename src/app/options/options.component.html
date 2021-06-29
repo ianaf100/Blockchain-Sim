@@ -2,7 +2,7 @@
     <mat-form-field>
         <mat-label>Engine</mat-label>
         <mat-select [(ngModel)]="selectedEngine" (ngModelChange)="updateEngine()">
-            <mat-option *ngFor="let e of engines" [value]="e.value">
+            <mat-option *ngFor="let e of engines" [value]="e.value" [disabled]="e.disabled">
                 {{e.viewValue}}
             </mat-option>
         </mat-select>
